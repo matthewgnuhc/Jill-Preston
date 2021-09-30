@@ -23,9 +23,6 @@ main>.container {
 
 /* default styles */
 .header {
-    background-repeat: no-repeat;
-    background-position: fixed;
-    background-size: cover;
     background: linear-gradient(to right, #ee9ca7, #ffdde1);
 
 }
@@ -34,12 +31,15 @@ main>.container {
 @media only screen and (min-width: 992px) {
     .header {
         background-image: url("/img/JillPrestonLarge.png");
+        background-repeat: no-repeat;
+        background-position: fixed;
+        background-size: cover;
         min-height: 480px;
     }
 }
 
 /* Show small image on smaller screens */
-@media only screen and (min-width: 576px) and (max-width: 991px) {
+@media only screen and (min-width: 770px) and (max-width: 991px) {
     .header {
         background-image: url("/img/JillPrestonSmall.png");
     }
